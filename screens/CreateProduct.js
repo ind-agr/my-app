@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
         padding:0,
         marginBottom:20,
         borderBottomWidth:1,
-        borderBottomColor:'#cccccc'
+        borderRadius: 10,
+        borderBottomColor:'#cccccc',
       },  
 });

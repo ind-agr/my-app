@@ -47,7 +47,7 @@ export default function ListProduct(props) {
           lista.map((list)=>(
             <TouchableOpacity key={list.id} style={styles.BotonLista} 
             onPress={()=>props.navigation.navigate('Show',{productoId:list.id})}>
-                <Text style={styles.TextoNombre}>-{list.nombre}</Text>
+                <Text style={styles.TextoNombre}> - {list.nombre}</Text>
             </TouchableOpacity>
           ))
         }
@@ -60,14 +60,16 @@ export default function ListProduct(props) {
 
 const styles = StyleSheet.create({
     Boton:{
-        backgroundColor:'#007BFF',
-         height:35,
-         borderColor:'black',
-        borderWidth:1     
+        backgroundColor:'#ff8400',
+        height:35,
+        borderColor:'gray',
+        borderRadius:8 
       },
       TextoBoton:{
         fontSize:18,
-        textAlign:'center'
+        textAlign:'center',
+        color: 'white',
+        marginTop: 5
       },
       TextoTitulo:{
         textAlign:'center',
